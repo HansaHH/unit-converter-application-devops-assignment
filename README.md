@@ -18,6 +18,7 @@ A simple unit conversion web application (MERN) that converts between different 
 - React.js, Tailwind CSS
 - Node.js (Express)
 - MongoDB Atlas
+- Docker, Docker Compose
 - GitHub Actions (CI/CD)
 - Deployment platforms: Vercel (Frontend), Railway (Backend)
 
@@ -100,6 +101,25 @@ npm install
 npm run dev
 # open http://localhost:5173 in your browser
 ```
+
+## Containerization: Docker + Docker Compose
+**Prerequisites**
+- Docker Desktop (or Docker Engine) with Compose support
+
+**Run the full stack**
+```bash
+# from repository root
+docker compose up --build
+```
+
+**Stop services**
+```bash
+docker compose down
+```
+
+Notes:
+- Ensure backend and frontend environment variables are set before running containers.
+- Update any API base URL in the frontend to point to the backend container or published port.
 
 ## Environment Variables
 
